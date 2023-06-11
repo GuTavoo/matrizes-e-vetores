@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int matriz[2][3];
+    int i, j, soma = 0;
+
+    // Ler os elementos da matriz 2x3
+    printf("Digite os elementos da matriz 2x3:\n");
+    for (i = 0; i < 2; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("Elemento (%d,%d): ", i, j);
+            scanf("%d", &matriz[i][j]);
+            soma += matriz[i][j];
+        }
+    }
+
+    // Imprimir a soma dos 6 números
+    printf("A soma dos 6 números é: %d\n", soma);
+
+    return 0;
+}
